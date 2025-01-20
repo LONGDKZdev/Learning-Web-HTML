@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Animation with Dragon</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #000;
+        }
+        .dragon {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-image: url('dragon-head.png'); /* Replace with your dragon head image */
+            background-size: cover;
+            pointer-events: none;
+            animation: fadeOut 2s forwards;
+        }
+        .dragon-body {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-image: url('dragon-body.png'); /* Replace with your dragon body image */
+            background-size: cover;
+            pointer-events: none;
+            animation: fadeOut 2s forwards;
+        }
+
+        @keyframes fadeOut {
+            to {
+                opacity: 0;
+                transform: scale(1.5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <script src="animation.js"></script>
+</body>
+</html>
